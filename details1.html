@@ -18,7 +18,13 @@
 	<link rel="stylesheet" href="css/photoswipe.css">
 	<link rel="stylesheet" href="css/default-skin.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="skin/skin.css">
+	<link rel='stylesheet' href='css/oryezj.css'>
+<link rel="stylesheet" href="css/player.css">
 
+	<style>
+	.flowplayer { width: 80%; }
+</style>
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
@@ -147,19 +153,19 @@
 		</div>
 
 		<!-- header search -->
-		<form action="#" class="header__search">
-			<div class="container">
+		<div class="container">
 				<div class="row">
 					<div class="col-12">
+		<form action="#" class="header__search" style="border-radius: 0px 0px 10px 10px">
+
 						<div class="header__search-content">
 							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
-
-							<button type="button">search</button>
 						</div>
-					</div>
+
+		</form>
+							</div>
 				</div>
 			</div>
-		</form>
 		<!-- end header search -->
 	</header>
 	<!-- end header -->
@@ -186,7 +192,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="320" class="centered-and-cropped sround" src="img/posters/m20.jpg" alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -224,52 +230,95 @@
 
 				<!-- player -->
 				<div class="col-12 col-xl-6">
-					<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-						<!-- Video files -->
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4">
-
-						<!-- Caption files -->
-						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-						    default>
-						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-
-						<!-- Fallback for browsers that don't support the <video> element -->
-						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-					</video>
+					 <div id="video__container">
+  <!-- Video -->
+  <video id="video" preload="metadata" poster="https://mango.blender.org/wp-content/uploads/2013/06/12_scients_header.jpg?x88450">      
+    <source src="http://172.16.50.4/SAM-FTP-1/English%20Movies%20%281080p%29/%282018%29%201080p/7%20Days%20in%20Entebbe%20%282018%29%201080p/7.Days.in.Entebbe.2018.1080p.BRRip.x264.MkvCage.WS.mkv">
+  </video>
+  <div id="video__controls__container">
+    
+    <div id="video__play__centerButton" class="fa fa-play-circle-o fa-5x"></div>
+    <div id="video__controls">
+      <input type="range" id="seek-bar" value="0" class="controls">
+      <button style="float: left; padding-left: 10px;" type="button" id="play-pause" class="controls play fa fa-play"></button>
+      
+      <button type="button" id="mute" class="controls fa fa-volume-off"></button>
+      <input type="range" id="volume-bar" class="controls" min="0" max="1" step="0.1">
+      <button style="float: right; padding-right: 10px;" type="button" id="full-screen" class="controls fa fa-arrows-alt"></button>
+    </div>
+  </div>
+</div>
 				</div>
 				<!-- end player -->
 
-				<div class="col-12">
-					<div class="details__wrap">
-						<!-- availables -->
-						<div class="details__devices">
-							<span class="details__devices-title">Available on devices:</span>
-							<ul class="details__devices-list">
-								<li><i class="icon ion-logo-apple"></i><span>IOS</span></li>
-								<li><i class="icon ion-logo-android"></i><span>Android</span></li>
-								<li><i class="icon ion-logo-windows"></i><span>Windows</span></li>
-								<li><i class="icon ion-md-tv"></i><span>Smart TV</span></li>
-							</ul>
-						</div>
-						<!-- end availables -->
+				<!-- accordion -->
 
-						<!-- share -->
-						<div class="details__share">
-							<span class="details__share-title">Share with friends:</span>
+				<div class="col-12 col-xl-6" style="padding-top: 70px;">
+					<div class="accordion sround" id="accordion">
+						<div class="accordion__card">
+							<div class="card-header" id="headingOne">
+								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									<h2>Download</h2>
+									<span>Click to Expand</span>
+								</button>
+							</div>
 
-							<ul class="details__share-list">
-								<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
-								<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
-								<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
-								<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
-							</ul>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body">
+									<table class="accordion__list">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Title</th>
+												<th>Air Date</th>
+											</tr>
+										</thead>
+
+										<tbody>
+											<tr>
+												<th>1</th>
+												<td>Pilot</td>
+												<td>Tuesday, November 16th, 2004</td>
+											</tr>
+											<tr>
+												<th>2</th>
+												<td>Paternity</td>
+												<td>Tuesday, November 23rd, 2004</td>
+											</tr>
+											<tr>
+												<th>3</th>
+												<td>Occam's Razor</td>
+												<td>Tuesday, November 30th, 2004</td>
+											</tr>
+											<tr>
+												<th>4</th>
+												<td>Maternity</td>
+												<td>Tuesday, December 7th, 2004</td>
+											</tr>
+											<tr>
+												<th>5</th>
+												<td>Damned If You Do</td>
+												<td>Tuesday, December 14th, 2004</td>
+											</tr>
+											<tr>
+												<th>6</th>
+												<td>The Socratic Method</td>
+												<td>Tuesday, December 21st, 2004</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
-						<!-- end share -->
+
+
+
+
+
+
 					</div>
 				</div>
+				<!-- end accordion -->
 			</div>
 		</div>
 		<!-- end details content -->
@@ -283,21 +332,21 @@
 				<div class="row">
 					<div class="col-12">
 						<!-- content title -->
-						<h2 class="content__title">Discover</h2>
+						
 						<!-- end content title -->
 
 						<!-- content tabs nav -->
 						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a>
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Dowloads</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a>
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a>
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Screenshots</a>
 							</li>
 						</ul>
 						<!-- end content tabs nav -->
@@ -311,11 +360,11 @@
 
 							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
 								<ul class="nav nav-tabs" role="tablist">
-									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a></li>
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Downloads</a></li>
 
-									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a></li>
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a></li>
 
-									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a></li>
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Screenshots</a></li>
 								</ul>
 							</div>
 						</div>
@@ -575,7 +624,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -596,7 +645,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -616,7 +665,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -638,7 +687,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -659,7 +708,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -680,7 +729,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -825,6 +874,9 @@
 	</div>
 
 	<!-- JS -->
+
+   <script  src="js/player.js"></script>
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
