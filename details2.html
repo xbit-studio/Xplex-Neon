@@ -20,16 +20,12 @@
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-	<link rel="apple-touch-icon" href="icon/favicon-32x32.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-touch-icon-144x144.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Dmitry Volkov">
-	<title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
+	<title>Xplex – Single TV Series Player</title>
 
 </head>
 <body class="body">
@@ -43,42 +39,70 @@
 						<div class="header__content">
 							<!-- header logo -->
 							<a href="index.html" class="header__logo">
-								<img src="img/logo.svg" alt="">
+								<img src="img/logo.png" alt="">
 							</a>
 							<!-- end header logo -->
 
 							<!-- header nav -->
+							<!-- header nav -->
 							<ul class="header__nav">
 								<!-- dropdown -->
 								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuHome" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuHome">
-										<li><a href="index.html">Home slideshow bg</a></li>
-										<li><a href="index2.html">Home static bg</a></li>
+										<div class="row">
+											<div class="col-md-6">
+										<li><a href="catalog1.html">English</a></li>
+										<li><a href="index.html">Korean</a></li>
+										<li><a href="index.html">Hindi</a></li>
+										<li><a href="index.html">South Indian</a></li>
+									</div>
+									<div class="col-md-6">
+										<li><a href="index2.html">Animation</a></li>
+										<li><a href="index2.html">Foreign Movies</a></li>
+										<li><a href="index2.html">3D Movies</a></li>
+									</div>
+										</div>
 									</ul>
 								</li>
 								<!-- end dropdown -->
 
 								<!-- dropdown -->
 								<li class="header__nav-item">
-									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TV-Shows</a>
 
 									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
-										<li><a href="catalog1.html">Catalog Grid</a></li>
-										<li><a href="catalog2.html">Catalog List</a></li>
-										<li><a href="details1.html">Details Movie</a></li>
-										<li><a href="details2.html">Details TV Series</a></li>
+										<div class="row">
+											<div class="col-md-6">
+										<li><a href="index.html">TV-Series</a></li>
+										<li><a href="index.html">Anime Series</a></li>
+				
+									</div>
+									<div class="col-md-6">
+										<li><a href="index2.html">Award & TV Shows</a></li>
+										<li><a href="index2.html">WWE Wrestling
+									</div>
+										</div>
 									</ul>
 								</li>
 								<!-- end dropdown -->
 
 								<li class="header__nav-item">
-									<a href="pricing.html" class="header__nav-link">Pricing Plan</a>
+									<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Games</a>
+									<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuMore">
+										<li><a href="about.html">PC Games</a></li>
+										<li><a href="signin.html">Android Games</a></li>
+										<li><a href="signup.html">Console Games</a></li>
+									</ul>
+
 								</li>
 
 								<li class="header__nav-item">
-									<a href="faq.html" class="header__nav-link">Help</a>
+									<a href="faq.html" class="header__nav-link">Softwares</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="faq.html" class="header__nav-link">Ohters</a>
 								</li>
 
 								<!-- dropdown -->
@@ -92,8 +116,10 @@
 										<li><a href="404.html">404 Page</a></li>
 									</ul>
 								</li>
+
 								<!-- end dropdown -->
 							</ul>
+							<!-- end header nav -->
 							<!-- end header nav -->
 
 							<!-- header auth -->
@@ -123,19 +149,19 @@
 		</div>
 
 		<!-- header search -->
-		<form action="#" class="header__search">
-			<div class="container">
+		<div class="container">
 				<div class="row">
 					<div class="col-12">
+		<form action="#" class="header__search" style="border-radius: 0px 0px 10px 10px">
+
 						<div class="header__search-content">
 							<input type="text" placeholder="Search for a movie, TV Series that you are looking for">
-
-							<button type="button">search</button>
 						</div>
-					</div>
+
+		</form>
+							</div>
 				</div>
 			</div>
-		</form>
 		<!-- end header search -->
 	</header>
 	<!-- end header -->
@@ -143,7 +169,7 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/home__bg.jpg"></div>
+		<div class="details__bg" data-bg="img/c5.jpg"></div>
 		<!-- end details background -->
 
 		<!-- details content -->
@@ -162,7 +188,7 @@
 							<!-- card cover -->
 							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="320" class="centered-and-cropped sround" src="img/posters/m1.jpg"  alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
@@ -199,28 +225,20 @@
 				<!-- end content -->
 
 				<!-- player -->
-				<div class="col-12 col-xl-6">
-					<video controls crossorigin playsinline poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-						<!-- Video files -->
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4">
-						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1440p.mp4" type="video/mp4">
-
-						<!-- Caption files -->
-						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
-						    default>
-						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
-
-						<!-- Fallback for browsers that don't support the <video> element -->
-						<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-					</video>
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					<h2 class="details__title" style="color: white">Watch Here</h2>
+					<video class="sround" width="100%" controls>
+  <source src="http://172.16.50.4/SAM-FTP-1/English%20Movies%20%281080p%29/%282018%29%201080p/Red%20Sparrow%20%282018%29%201080p/Red.Sparrow.2018.1080p.BRRip.6CH.MkvCage.Com.mkv" type="video/mp4">
+ 
+  Your browser does not support HTML5 video.
+</video>
 				</div>
 				<!-- end player -->
 
 				<!-- accordion -->
-				<div class="col-12 col-xl-6">
-					<div class="accordion" id="accordion">
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					<h2 class="details__title" style="color: white">Download List</h2>
+					<div class="accordion sround" id="accordion">
 						<div class="accordion__card">
 							<div class="card-header" id="headingOne">
 								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -451,28 +469,11 @@
 				<div class="col-12">
 					<div class="details__wrap">
 						<!-- availables -->
-						<div class="details__devices">
-							<span class="details__devices-title">Available on devices:</span>
-							<ul class="details__devices-list">
-								<li><i class="icon ion-logo-apple"></i><span>IOS</span></li>
-								<li><i class="icon ion-logo-android"></i><span>Android</span></li>
-								<li><i class="icon ion-logo-windows"></i><span>Windows</span></li>
-								<li><i class="icon ion-md-tv"></i><span>Smart TV</span></li>
-							</ul>
-						</div>
+
 						<!-- end availables -->
 
 						<!-- share -->
-						<div class="details__share">
-							<span class="details__share-title">Share with friends:</span>
 
-							<ul class="details__share-list">
-								<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
-								<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
-								<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
-								<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
-							</ul>
-						</div>
 						<!-- end share -->
 					</div>
 				</div>
@@ -489,21 +490,21 @@
 				<div class="row">
 					<div class="col-12">
 						<!-- content title -->
-						<h2 class="content__title">Discover</h2>
+					
 						<!-- end content title -->
 
 						<!-- content tabs nav -->
 						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a>
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Details</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a>
+								<a class="nav-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a>
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a>
+								<a class="nav-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Screenshots</a>
 							</li>
 						</ul>
 						<!-- end content tabs nav -->
@@ -517,11 +518,11 @@
 
 							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
 								<ul class="nav nav-tabs" role="tablist">
-									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Comments</a></li>
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Details</a></li>
 
-									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reviews</a></li>
+									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a></li>
 
-									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Photos</a></li>
+									<li class="nav-item"><a class="nav-link" id="3-tab" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Screenshots</a></li>
 								</ul>
 							</div>
 						</div>
@@ -781,7 +782,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m1.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -802,7 +803,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -822,7 +823,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -844,7 +845,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -865,7 +866,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -886,7 +887,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>

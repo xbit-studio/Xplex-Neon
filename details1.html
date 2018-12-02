@@ -18,20 +18,16 @@
 	<link rel="stylesheet" href="css/photoswipe.css">
 	<link rel="stylesheet" href="css/default-skin.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="skin/skin.css">
-	<link rel='stylesheet' href='css/oryezj.css'>
-<link rel="stylesheet" href="css/player.css">
 
-	<style>
-	.flowplayer { width: 80%; }
-</style>
+
+
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Dmitry Volkov">
-	<title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
+	<title>Xplex – Movie Player</title>
 
 </head>
 <body class="body">
@@ -173,10 +169,10 @@
 	<!-- details -->
 	<section class="section details">
 		<!-- details background -->
-		<div class="details__bg" data-bg="img/home/home__bg.jpg"></div>
+		<div class="details__bg" data-bg="img/c5.jpg"></div>
 		<!-- end details background -->
 
-		<!-- details content -->
+				<!-- details content -->
 		<div class="container">
 			<div class="row">
 				<!-- title -->
@@ -186,19 +182,19 @@
 				<!-- end title -->
 
 				<!-- content -->
-				<div class="col-12 col-xl-6">
-					<div class="card card--details">
+				<div class="col-10">
+					<div class="card card--details card--series">
 						<div class="row">
 							<!-- card cover -->
-							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">
+							<div class="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-3">
 								<div class="card__cover">
-									<img height="320" class="centered-and-cropped sround" src="img/posters/m20.jpg" alt="">
+									<img height="320" class="centered-and-cropped sround" src="img/posters/m1.jpg"  alt="">
 								</div>
 							</div>
 							<!-- end card cover -->
 
 							<!-- card content -->
-							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-7">
+							<div class="col-12 col-sm-8 col-md-8 col-lg-9 col-xl-9">
 								<div class="card__content">
 									<div class="card__wrap">
 										<span class="card__rate"><i class="icon ion-ios-star"></i>8.4</span>
@@ -218,7 +214,7 @@
 									</ul>
 
 									<div class="card__description card__description--details">
-										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+										It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 									</div>
 								</div>
 							</div>
@@ -229,41 +225,22 @@
 				<!-- end content -->
 
 				<!-- player -->
-				<div class="col-12 col-xl-6">
-					 <div id="video__container">
-  <!-- Video -->
-  <video id="video" preload="metadata" poster="https://mango.blender.org/wp-content/uploads/2013/06/12_scients_header.jpg?x88450">      
-    <source src="http://172.16.50.4/SAM-FTP-1/English%20Movies%20%281080p%29/%282018%29%201080p/7%20Days%20in%20Entebbe%20%282018%29%201080p/7.Days.in.Entebbe.2018.1080p.BRRip.x264.MkvCage.WS.mkv">
-  </video>
-  <div id="video__controls__container">
-    
-    <div id="video__play__centerButton" class="fa fa-play-circle-o fa-5x"></div>
-    <div id="video__controls">
-      <input type="range" id="seek-bar" value="0" class="controls">
-      <button style="float: left; padding-left: 10px;" type="button" id="play-pause" class="controls play fa fa-play"></button>
-      
-      <button type="button" id="mute" class="controls fa fa-volume-off"></button>
-      <input type="range" id="volume-bar" class="controls" min="0" max="1" step="0.1">
-      <button style="float: right; padding-right: 10px;" type="button" id="full-screen" class="controls fa fa-arrows-alt"></button>
-    </div>
-  </div>
-</div>
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					<h2 class="details__title" style="color: white">Watch Here</h2>
+					<video class="sround" width="100%" controls>
+  <source src="http://172.16.50.4/SAM-FTP-1/English%20Movies%20%281080p%29/%282018%29%201080p/Red%20Sparrow%20%282018%29%201080p/Red.Sparrow.2018.1080p.BRRip.6CH.MkvCage.Com.mkv" type="video/mp4">
+ 
+  Your browser does not support HTML5 video.
+</video>
 				</div>
 				<!-- end player -->
 
 				<!-- accordion -->
+				<div class="col-12 col-xl-6" style="padding-top: 1%">
+					
+			
 
-				<div class="col-12 col-xl-6" style="padding-top: 70px;">
-					<div class="accordion sround" id="accordion">
-						<div class="accordion__card">
-							<div class="card-header" id="headingOne">
-								<button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									<h2>Download</h2>
-									<span>Click to Expand</span>
-								</button>
-							</div>
-
-							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<h2 class="details__title" style="color: white">Download List</h2>
 								<div class="card-body">
 									<table class="accordion__list">
 										<thead>
@@ -307,18 +284,18 @@
 											</tr>
 										</tbody>
 									</table>
-								</div>
-							</div>
-						</div>
 
 
+						
 
+						
 
-
-
+						
 					</div>
 				</div>
 				<!-- end accordion -->
+
+
 			</div>
 		</div>
 		<!-- end details content -->
@@ -338,7 +315,7 @@
 						<!-- content tabs nav -->
 						<ul class="nav nav-tabs content__tabs" id="content__tabs" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Dowloads</a>
+								<a class="nav-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Details</a>
 							</li>
 
 							<li class="nav-item">
@@ -360,7 +337,7 @@
 
 							<div class="content__mobile-tabs-menu dropdown-menu" aria-labelledby="mobile-tabs">
 								<ul class="nav nav-tabs" role="tablist">
-									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Downloads</a></li>
+									<li class="nav-item"><a class="nav-link active" id="1-tab" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Details</a></li>
 
 									<li class="nav-item"><a class="nav-link" id="2-tab" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Comments</a></li>
 
@@ -624,7 +601,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m1.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -645,7 +622,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m2.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -665,7 +642,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m3.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -687,7 +664,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m4.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -708,7 +685,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m5.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -729,7 +706,7 @@
 						<div class="col-6 col-sm-4 col-lg-6">
 							<div class="card">
 								<div class="card__cover">
-									<img height="240" class="centered-and-cropped sround" src="img/covers/cover.jpg" alt="">
+									<img height="240" class="centered-and-cropped sround" src="img/posters/m6.jpg" alt="">
 									<a href="#" class="card__play">
 										<i class="icon ion-ios-play"></i>
 									</a>
@@ -792,11 +769,11 @@
 				<div class="col-12 col-sm-4 col-md-3">
 					<h6 class="footer__title">Contact</h6>
 					<ul class="footer__list">
-						<li><a href="tel:+8801904440314">+8801904440314</a></li>
-						<li><a href="mailto:support@xplex.xyz">support@xplex.xyz</a></li>
+						<li><a href="tel:+18002345678">+1 (800) 234-5678</a></li>
+						<li><a href="mailto:support@moviego.com">support@flixgo.com</a></li>
 					</ul>
 					<ul class="footer__social">
-						<li class="facebook"><a href="https://www.facebook.com/xplex.ftp"><i class="icon ion-logo-facebook"></i></a></li>
+						<li class="facebook"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
 						<li class="instagram"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
 						<li class="twitter"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
 						<li class="vk"><a href="#"><i class="icon ion-logo-vk"></i></a></li>
@@ -807,7 +784,7 @@
 				<!-- footer copyright -->
 				<div class="col-12">
 					<div class="footer__copyright">
-						<small>© 2018 Xplex. Create by <a href="https://m.me/xplex.ftp" target="_blank">Xplex</a></small>
+						<small>© 2018 FlixGo. Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank">Dmitry Volkov</a></small>
 
 						<ul>
 							<li><a href="#">Terms of Use</a></li>
@@ -876,7 +853,6 @@
 	<!-- JS -->
 
    <script  src="js/player.js"></script>
-
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
